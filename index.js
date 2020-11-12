@@ -30,13 +30,13 @@ var allowCrossDomain = function(req, res, next) {
 app.use(allowCrossDomain);
 
 // определяем обработчик для маршрута "/"
-app.get("/", function(request, response){
+app.all("/", function(request, response){
      
     // отправляем ответ
     response.send("<h2>Привет Express!</h2>");
 });
 
-app.post("/result4", function (request, response) 
+app.all("/result4", function (request, response) 
     {
 
     result = {"message":"vyacheslavkirchuk","x-result":request.headers['x-test'],"x-body":request.body}
