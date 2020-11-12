@@ -46,7 +46,7 @@ app.post("/result4", function (request, response)
 });
 
 // начинаем прослушивать подключения на 3000 порту
-app.listen(3000, (err) => {
+app.listen(4321, (err) => {
     if (err) console.log('Error ', err);
-    console.log('Server port', 3000);
+    console.log('Server port', 4321);
 });
