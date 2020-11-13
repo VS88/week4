@@ -41,7 +41,7 @@ app.all("/result4", function (request, response)
 
     result = {"message":"vyacheslavkirchuk","x-result":request.headers['x-test'],"x-body":request.body}
 
-    response.json(JSON.stringify(result));
+    response.json(result);
 
 });
 
