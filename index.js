@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const http = require("http");
 
 http
